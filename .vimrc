@@ -1,13 +1,14 @@
 syntax on
 set background=dark
-set smarttab tabstop=5 shiftwidth=3
-set tabstop=5
-set softtabstop=5
-set shiftwidth=5
+set smarttab tabstop=4 shiftwidth=3
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
 set preserveindent
+filetype indent on
 "set mouse=a
 
 "CURSOR SHAPE
@@ -22,8 +23,8 @@ set timeoutlen=1000 ttimeoutlen=0
 " 5 -> blinking vertical bar
 " 6 -> solid vertical bar
 
-autocmd Filetype cpp,c,java,src,hh setlocal ts=5 sw=5 expandtab smarttab cindent softtabstop=5
-autocmd Filetype python setlocal ts=5 sw=5 expandtab smarttab softtabstop=4
+autocmd Filetype cpp,c,java,src,hh setlocal ts=4 sw=4 expandtab smarttab cindent softtabstop=4
+autocmd Filetype python setlocal ts=4 sw=4 expandtab smarttab softtabstop=4
 autocmd BufWritePre * :%s/\s\+$//e
 set dir=/tmp
 set modeline
@@ -35,3 +36,4 @@ set smartcase
 set incsearch
 
 filetype plugin on
+set nu
