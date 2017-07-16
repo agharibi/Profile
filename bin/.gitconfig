@@ -1,0 +1,53 @@
+[user]
+    name = Alexander Gharibian
+    email = agharibi@purdue.edu
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = auto
+    pager = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[core]
+    pager = less -iXfr
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = /home/herlo/.gitignore
+    editor = nvim
+
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset (%aN <%aE>)' --abbrev-commit --date=relative
+	personal = config user.email \"agharibian1@gmail.com\"
+	purdue = config user.email \"agharibi@purdue.edu\"
+	rh = config user.email agharibi@redhat.com
+
+[diff "odf"]
+    textconv=odt2txt
+
+[filter "opendocument"]
+    clean = "rezip -p ODF_UNCOMPRESS"
+    smudge = "rezip -p ODF_COMPRESS"
+
+[push]
+    default = simple

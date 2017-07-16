@@ -17,7 +17,7 @@ alias 'rbash'='source ~/.bash_profile'
 alias 'c'='clear'
 alias 'q'='sync; exit'
 alias 'l'='ls'
-alias 'll'='ls -l'
+alias 'll'='ls -la'
 alias 'la'='ls -a'
 
 # Enable bzr bash completion
